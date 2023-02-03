@@ -4,16 +4,12 @@ import { useForm } from 'react-hook-form'
 function Add() {
 	const {register, handleSubmit} = useForm();
 	const onSubmit = (data) => {
-		fetch('http://localhost/dashboard/simple%20api/test.php', {
-			method: 'PUT',
+		fetch('http://localhost:80/dashboard/simple%20api/test.php', {
+			method: 'POST',
 			body: JSON.stringify({
 				naam:data.naam,
 				inhoud:data.inhoud
-			}),
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		})
+			})})
 		.then(response => response.json())
 		
 		// console.log({ id:-1, naam:data.naam, inhoud:data.inhoud })
