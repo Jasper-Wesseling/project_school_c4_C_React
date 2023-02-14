@@ -26,7 +26,7 @@ table {
 		color: white;
 	}
 
-	button {
+	.table-button__nostyle {
 		background: none;
 		color: inherit;
 		border: none;
@@ -34,6 +34,6 @@ table {
 		font: inherit;
 		cursor: pointer;
 		outline: inherit;
-	}
+	} 
 }
 
